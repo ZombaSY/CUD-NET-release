@@ -20,7 +20,7 @@ def main():
     parser.add_argument('--points', type=int, default=64, help='The number of curve points')
     parser.add_argument('-clip_threshold', action='store_true', help='clip the output image to threshold of input')
     parser.add_argument('--model_path', type=str,
-                        default='./model_checkpoints/CUD200.pt')
+                        default='./model_checkpoints/CUD50.pt')
 
     # Data parameter
     parser.add_argument('--data_class', choices=['A', 'B'], help='input data class')

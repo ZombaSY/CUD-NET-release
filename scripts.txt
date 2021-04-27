@@ -1,3 +1,3 @@
-CUDA_VISIBLE_DEVICES=0 python main.py -use_wandb --log_interval 100 --save_interval 10 -cuda -pin_memory --mode train
+CUDA_VISIBLE_DEVICES=0 python main.py --log_interval 100 --save_interval 10 -cuda -pin_memory --mode train --worker 8
 
-CUDA_VISIBLE_DEVICES=0 python test_image.py -cuda -pin_memory --worker 2 --mode inference --data_class A
+CUDA_VISIBLE_DEVICES=1 python test_image.py -cuda -pin_memory --worker 2 --mode inference --data_class A

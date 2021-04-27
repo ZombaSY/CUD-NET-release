@@ -41,6 +41,8 @@ class ImageImageLoader(Dataset):
         new_img_x = open(self.x_img_path[index]).convert('RGB')
         new_img_y = open(self.y_img_path[index]).convert('RGB')
 
+        # print(self.x_img_path[index])     # assert wx == wy and hx == hy, 'image size should be same'
+
         new_img_x = utils.m_invert(new_img_x)
         new_img_y = utils.m_invert(new_img_y)
 
