@@ -54,15 +54,15 @@ class CUD_NET(nn.Module):
                  clip_threshold=False):
         super(CUD_NET, self).__init__()
 
-        self.curllayer = model_cud.CUD_NET(num_in_channels=3,
+        self.cud_layer = model_cud.CUD_NET(num_in_channels=3,
                                            num_out_channels=3,
                                            num_points=num_points,
                                            save_figures=save_figures,
                                            clip_threshold=clip_threshold)
-        initialize_weights(self.curllayer, activation='tanh')
+        initialize_weights(self.cud_layer, activation='tanh')
 
     def forward(self, img, fn=None):
-        img = self.curllayer(img, fn=fn)
+        img = self.cud_layer(img, fn=fn)
 
         return img
 
