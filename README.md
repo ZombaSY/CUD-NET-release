@@ -35,8 +35,6 @@ You can find pretrained models on "<i>model_checkpoints/</i>":
 
 ![image_1](images/image_01.jpg)
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
 
 ## License
 
