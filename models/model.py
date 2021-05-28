@@ -1,15 +1,4 @@
 # -*- coding: utf-8 -*-
-'''
-This is a PyTorch implementation of CURL: Neural Curve Layers for Global Image Enhancement
-https://arxiv.org/pdf/1911.13175.pdf
-
-Please cite paper if you use this code.
-
-Tested with Pytorch 0.3.1, Python 3.5
-
-Authors: Sean Moran (sean.j.moran@gmail.com), 2020
-
-'''
 
 import torch.nn as nn
 
