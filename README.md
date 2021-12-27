@@ -1,7 +1,7 @@
 # CUD-NET: Color Universal Design Neural Filter for the Color Weakness
 
 This repository is the official implementation of [CUD-NET: Color Universal Design Neural Filter for
-the Color Weakness](https://arxiv.org/abs/2030.12345).
+the Color Weakness](https://openreview.net/forum?id=3g5KdPD8LIL).
 
 Sunyong Seo, Hana Kim, Jinho Park
 
