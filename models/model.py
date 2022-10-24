@@ -66,4 +66,3 @@ class CUD_Loss(nn.Module):
         lab_loss, ssim_loss = self.crterion_layer(_input, _output, _target, is_identity)
 
         return lab_loss, ssim_loss
-
