@@ -1,10 +1,10 @@
-# CUD-NET: Color Universal Design Neural Filter for the Color Weakness
+# CUD-Net: Color Universal Design Neural Filter for the Color Vision Deficiencies
 
-This repository is the official implementation of [CUD-NET: Color Universal Design Neural Filter for Color Vision Deficiency]
+This repository is the official implementation of [CUD-Net: Color Universal Design Neural Filter for the Color Vision Deficiencies]
 
 # Notice
 - As our train dataset is exclusive to cooperation institutes, only part of the inference dataset can be released.
-- The HSV conversion algorithm has defunction of resversing Hue on the value with 180.
+- The HSV conversion algorithm has malfunction of reversing Hue on the value with 180.
 - We used extra training data on up-loaded model, so there would be some error comparing to papers'
 
 ## Requirements
