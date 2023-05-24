@@ -788,9 +788,8 @@ class Datonize():
         return np.round(rgb)
 
     @staticmethod
-    def deuteranopia_img(img) -> Image.Image:
+    def deuteranopia_img(img, simulate_type='d') -> Image.Image:
         gamma = 0.1
-        simulate_type = "d"
 
         img = np.asarray(img.convert("RGB"), dtype=np.float16)
         orig_img = Datonize.__gamma_correction(img, gamma)

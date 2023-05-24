@@ -790,8 +790,7 @@ class CUD_NET(nn.Module):
             util.save_plt_figure(curve_SS, fn=fn + '_curve_SS')
             util.save_plt_figure(curve_VV, fn=fn + '_curve_VV')
 
-        img_hsv_out, _ = util.ImageProcessing.adjust_sv(
-            img_hsv, H[0, 0:self.num_points])
+        img_hsv_out, _ = util.ImageProcessing.adjust_sv(img_hsv, H[0, 0:self.num_points])
         img_hsv_out = torch.clamp(img_hsv_out, 0, 1)
 
         if self.clip_threshold:
