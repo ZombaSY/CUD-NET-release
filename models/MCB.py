@@ -276,29 +276,3 @@ class MCB(nn.Module):
         z = self.mcb_layer(x1, x2)
 
         return z
-
-
-# def main():
-#     import time
-#
-#     mcb = MCB(1024, 2048)
-#
-#     tt = time.time()
-#
-#     # input.requires_grad() to backward as there's no param in module
-#     x1 = torch.rand(1, 2048, 1, 1).cuda().requires_grad_()
-#     x2 = torch.rand(1, 2048, 1, 1).cuda().requires_grad_()
-#
-#     y = torch.rand(4, 16384, 1, 1).cuda()
-#
-#     z = mcb(x1, x2)
-#
-#     loss = nn.functional.mse_loss(y, z)
-#     loss.backward()     # check backward-able
-#
-#     print('compute time', time.time() - tt)
-#     print('max mem:', torch.cuda.max_memory_allocated())
-#
-#
-# if __name__ == '__main__':
-#     main()

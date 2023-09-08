@@ -71,36 +71,3 @@ class SplitAttention(nn.Module):
             out = atten * x
 
         return out.contiguous()
-
-
-def main():
-    import time
-
-    radix = 32
-    cardinality = 4
-    channel_size = 128
-
-    x = torch.rand(1, channel_size, 1, 1).cuda()
-    y = torch.rand(1, channel_size, 1, 1).cuda()
-
-    split_attention = SplitAttention(channel_size, radix, cardinality).cuda()
-
-    tt = time.time()
-
-    z = split_attention(x)
-
-    torch.save(split_attention.state_dict(), 'wtf.pt')
-
-    # print(z.shape)
-    # print(z.sum())
-    # print(z)
-
-    # loss = nn.functional.mse_loss(y, z)
-    # loss.backward()     # check backward-able
-
-    # print('compute time', time.time() - tt)
-    # print('max mem:', torch.cuda.max_memory_allocated())
-
-
-if __name__ == '__main__':
-    main()

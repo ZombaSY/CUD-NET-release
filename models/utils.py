@@ -23,9 +23,9 @@ from matplotlib import pyplot as plt
 
 class ImageProcessing(object):
     '''
+    https://github.com/sjmoran/CURL
     @issue
     'hsv_to_rgb' and 'rgb_to_hsv' convert the image with H 180 value to 0, resulting blue color to red color
-
     '''
 
     @staticmethod
