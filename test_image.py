@@ -19,14 +19,13 @@ def main():
     parser.add_argument('-save_figures', action='store_true', help='save figures')
     parser.add_argument('--points', type=int, default=64, help='The number of curve points')
     parser.add_argument('-clip_threshold', action='store_true', help='clip the output image to threshold of input')
-    parser.add_argument('--model_path', type=str,
-                        default='./model_checkpoints/CUDNET.pt')
+    parser.add_argument('--model_path', type=str, default='./model_checkpoints/CUDNET.pt', help='Your model path')
 
     # Data parameter
     parser.add_argument('--data_class', choices=['A', 'B'], help='input data class')
     parser.add_argument('--test_path', type=str,
                         default='',
-                        help='Your awesome test image path')
+                        help='Your awesome dataset directory')
 
     args = parser.parse_args()
 
