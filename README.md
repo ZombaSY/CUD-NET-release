@@ -1,4 +1,4 @@
-# CUD-Net: Color Universal Design Neural Filter for the Color Vision Deficiencies
+# CUD-Net: Color Universal Design Neural Network for the Color Vision Deficiencies
 
 This repository is the official implementation of [CUD-Net: Color Universal Design Neural Filter for the Color Vision Deficiencies]
 
