@@ -9,11 +9,8 @@ This repository is the official implementation of [CUD-Net: Color Universal Desi
 
 ## Requirements
 
-To install requirements:
+- torch >= 1.5.1
 
-```setup
-pip install -r requirements.txt
-```
 
 ## Training and Evaluation
 

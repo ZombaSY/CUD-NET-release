@@ -773,8 +773,6 @@ class CUD_NET(nn.Module):
         feat_cat = feat_cat.view(feat_cat.size()[0], -1)
         H = self.regression_layer(feat_cat)
         H = H.view(H.size()[0], -1)
-        if self.batch_counter % self.interval == 0:
-            print('H', H[0, :50])
 
         if self.save_figures:
             curve_SS = np.array(torch.exp(H[0, int((self.num_points / 2) * 0): int((self.num_points / 2) * 1)].cpu().detach()))

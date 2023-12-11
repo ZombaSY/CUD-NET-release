@@ -24,7 +24,7 @@ def main():
     # Data parameter
     parser.add_argument('--data_class', choices=['A', 'B'], help='input data class')
     parser.add_argument('--test_path', type=str,
-                        default='',
+                        default='/path/to/root/',
                         help='Your awesome dataset directory')
 
     args = parser.parse_args()

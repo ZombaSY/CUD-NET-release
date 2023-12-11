@@ -16,7 +16,7 @@ from torchvision.utils import make_grid
 from torchvision import transforms
 from typing import Union, Optional, List, Tuple, Text, BinaryIO
 from skimage import io, color
-from skimage.measure import compare_ssim as ssim
+from skimage.metrics import structural_similarity as ssim
 from matplotlib.image import imread
 from matplotlib import pyplot as plt
 
